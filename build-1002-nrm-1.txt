@@ -1,0 +1,769 @@
+[0.783s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/akm/tilde-AWF/stee-AWF/install/lidar_apollo_segmentation_tvm_nodes' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.783s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/akm/tilde-AWF/stee-AWF/install/lidar_apollo_segmentation_tvm' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.784s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/akm/tilde-AWF/stee-AWF/install/rtc_manager_rviz_plugin' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.790s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/akm/tilde-AWF/stee-AWF/install/lidar_apollo_segmentation_tvm_nodes' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.790s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/akm/tilde-AWF/stee-AWF/install/lidar_apollo_segmentation_tvm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.791s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/akm/tilde-AWF/stee-AWF/install/rtc_manager_rviz_plugin' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.885s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'tier4_rtc_msgs' is in: /home/akm/tilde-AWF/stee-AWF/install/tier4_rtc_msgs, /home/akm/ws_awf/aw_tilde/install/tier4_rtc_msgs
+	'autoware_auto_planning_msgs' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_auto_planning_msgs, /home/akm/ws_awf/aw_tilde/install/autoware_auto_planning_msgs
+	'autoware_auto_mapping_msgs' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_auto_mapping_msgs, /home/akm/ws_awf/aw_tilde/install/autoware_auto_mapping_msgs
+	'autoware_launch' is in: /home/akm/ws_awf/aw_tilde/install/autoware_launch, /home/akm/tilde-AWF/stee-AWF/install/autoware_launch
+	'autoware_auto_common' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_auto_common, /home/akm/ws_awf/aw_tilde/install/autoware_auto_common
+	'autoware_auto_perception_msgs' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_auto_perception_msgs, /home/akm/ws_awf/aw_tilde/install/autoware_auto_perception_msgs
+	'autoware_auto_control_msgs' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_auto_control_msgs, /home/akm/ws_awf/aw_tilde/install/autoware_auto_control_msgs
+	'autoware_auto_geometry_msgs' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_auto_geometry_msgs, /home/akm/ws_awf/aw_tilde/install/autoware_auto_geometry_msgs
+	'autoware_lint_common' is in: /home/akm/tilde-AWF/stee-AWF/install/autoware_lint_common, /home/akm/ws_awf/aw_tilde/install/autoware_lint_common
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding autoware_auto_common autoware_auto_control_msgs autoware_auto_geometry_msgs autoware_auto_mapping_msgs autoware_auto_perception_msgs autoware_auto_planning_msgs autoware_launch autoware_lint_common tier4_rtc_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+Starting >>> autoware_lint_common
+Starting >>> autoware_auto_geometry_msgs
+Starting >>> autoware_auto_mapping_msgs
+Starting >>> tier4_debug_msgs
+Starting >>> autoware_auto_system_msgs
+Starting >>> autoware_auto_control_msgs
+Starting >>> tier4_control_msgs
+Starting >>> tier4_planning_msgs
+Starting >>> tier4_external_api_msgs
+Starting >>> tier4_system_msgs
+Starting >>> grid_map_cmake_helpers
+Starting >>> tier4_localization_msgs
+Finished <<< grid_map_cmake_helpers [3.52s]
+Starting >>> grid_map_core
+Finished <<< autoware_lint_common [3.87s]
+Starting >>> autoware_cmake
+Finished <<< autoware_cmake [4.11s]
+Starting >>> autoware_utils
+[Processing: autoware_auto_control_msgs, autoware_auto_geometry_msgs, autoware_auto_mapping_msgs, autoware_auto_system_msgs, autoware_utils, grid_map_core, tier4_control_msgs, tier4_debug_msgs, tier4_external_api_msgs, tier4_localization_msgs, tier4_planning_msgs, tier4_system_msgs]
+Finished <<< tier4_localization_msgs [40.7s]
+Starting >>> vehicle_info_util
+Finished <<< autoware_auto_geometry_msgs [44.6s]
+Starting >>> autoware_auto_perception_msgs
+Finished <<< tier4_control_msgs [45.2s]
+Starting >>> autoware_auto_common
+Finished <<< autoware_auto_control_msgs [45.9s]
+Starting >>> tier4_vehicle_msgs
+Finished <<< autoware_auto_mapping_msgs [47.8s]
+Starting >>> autoware_auto_planning_msgs
+Finished <<< vehicle_info_util [14.1s]
+Starting >>> grid_map_msgs
+Finished <<< autoware_auto_system_msgs [57.0s]
+Starting >>> time_utils
+Finished <<< time_utils [8.25s]
+Starting >>> autoware_point_types
+Finished <<< tier4_debug_msgs [1min 6s]
+Starting >>> tier4_pcl_extensions
+Finished <<< autoware_utils [58.1s]
+Starting >>> tier4_rtc_msgs
+Finished <<< tier4_system_msgs [1min 9s]
+Starting >>> autoware_ad_api_msgs
+Finished <<< autoware_auto_common [46.8s]
+Starting >>> osqp_interface
+Finished <<< autoware_point_types [39.8s]
+Starting >>> tier4_v2x_msgs
+Finished <<< grid_map_msgs [1min 4s]
+Starting >>> signal_processing
+Finished <<< grid_map_core [1min 56s]
+Starting >>> grid_map_cv
+Finished <<< osqp_interface [36.8s]
+Starting >>> kalman_filter
+Finished <<< tier4_rtc_msgs [1min 10s]
+Starting >>> mussp
+Finished <<< tier4_pcl_extensions [1min 18s]
+Starting >>> ndt_omp
+Finished <<< signal_processing [28.9s]
+Starting >>> velodyne_msgs
+Finished <<< tier4_vehicle_msgs [1min 44s]
+Starting >>> rtc_interface
+Finished <<< mussp [14.0s]
+Starting >>> component_interface_specs
+Finished <<< kalman_filter [21.9s]
+Starting >>> ndt_pcl_modified
+Finished <<< component_interface_specs [5.54s]
+Starting >>> pointcloud_to_laserscan
+Finished <<< tier4_v2x_msgs [52.4s]
+Starting >>> tier4_simulation_msgs
+Finished <<< autoware_ad_api_msgs [1min 36s]
+Starting >>> component_interface_utils
+Finished <<< rtc_interface [20.8s]
+Starting >>> autoware_ad_api_specs
+Finished <<< grid_map_cv [53.4s]
+Starting >>> grid_map_ros
+Finished <<< autoware_auto_planning_msgs [2min 6s]
+Starting >>> autoware_auto_vehicle_msgs
+Finished <<< component_interface_utils [8.77s]
+Starting >>> lanelet2_extension
+Finished <<< autoware_ad_api_specs [5.73s]
+Starting >>> global_parameter_loader
+Finished <<< tier4_planning_msgs [2min 57s]
+Starting >>> tier4_api_msgs
+Finished <<< ndt_pcl_modified [27.5s]
+Starting >>> autoware_sensing_msgs
+Finished <<< global_parameter_loader [5.51s]
+Starting >>> external_velocity_limit_selector
+Finished <<< velodyne_msgs [34.3s]
+Starting >>> velodyne_driver
+Finished <<< tier4_simulation_msgs [33.5s]
+Starting >>> geo_pos_conv
+Finished <<< geo_pos_conv [9.10s]
+Starting >>> grid_map_octomap
+Finished <<< autoware_sensing_msgs [36.3s]
+Starting >>> gyro_odometer
+Finished <<< external_velocity_limit_selector [41.4s]
+Starting >>> image_transport_decompressor
+Finished <<< autoware_auto_perception_msgs [3min 2s]
+Starting >>> tier4_perception_msgs
+--- stderr: ndt_omp
+** WARNING ** io features related to pcap will be disabled
+In file included from /home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:2:
+/home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp: In instantiation of ‘void pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::estimateRigidTransformationBFGS(const PointCloudSource&, const std::vector<int, std::allocator<int> >&, const PointCloudTarget&, const std::vector<int, std::allocator<int> >&, Eigen::Matrix4f&) [with PointSource = pcl::PointXYZ; PointTarget = pcl::PointXYZ; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudSource = pcl::PointCloud<pcl::PointXYZ>; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudTarget = pcl::PointCloud<pcl::PointXYZ>; Eigen::Matrix4f = Eigen::Matrix<float, 4, 4>]’:
+/home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:4:24:   required from here
+/home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp:230:31: warning: ‘BFGSSpace::Status BFGS<FunctorType>::testGradient(BFGS<FunctorType>::Scalar) [with FunctorType = pclomp::GeneralizedIterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ>::OptimizationFunctorWithIndices; BFGS<FunctorType>::Scalar = double]’ is deprecated: Use `testGradient()` instead (It will be removed in PCL 1.13) [-Wdeprecated-declarations]
+  230 |     result = bfgs.testGradient(gradient_tol);
+      |              ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/include/pclomp/gicp_omp.h:45,
+                 from /home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:1:
+/usr/include/pcl-1.12/pcl/registration/bfgs.h:164:21: note: declared here
+  164 |   BFGSSpace::Status testGradient(Scalar) { return testGradient(); }
+      |                     ^~~~~~~~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:2:
+/home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp: In instantiation of ‘void pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::estimateRigidTransformationBFGS(const PointCloudSource&, const std::vector<int, std::allocator<int> >&, const PointCloudTarget&, const std::vector<int, std::allocator<int> >&, Eigen::Matrix4f&) [with PointSource = pcl::PointXYZI; PointTarget = pcl::PointXYZI; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudSource = pcl::PointCloud<pcl::PointXYZI>; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudTarget = pcl::PointCloud<pcl::PointXYZI>; Eigen::Matrix4f = Eigen::Matrix<float, 4, 4>]’:
+/home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:5:24:   required from here
+/home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp:230:31: warning: ‘BFGSSpace::Status BFGS<FunctorType>::testGradient(BFGS<FunctorType>::Scalar) [with FunctorType = pclomp::GeneralizedIterativeClosestPoint<pcl::PointXYZI, pcl::PointXYZI>::OptimizationFunctorWithIndices; BFGS<FunctorType>::Scalar = double]’ is deprecated: Use `testGradient()` instead (It will be removed in PCL 1.13) [-Wdeprecated-declarations]
+  230 |     result = bfgs.testGradient(gradient_tol);
+      |              ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/include/pclomp/gicp_omp.h:45,
+                 from /home/akm/tilde-AWF/normal-AWF/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:1:
+/usr/include/pcl-1.12/pcl/registration/bfgs.h:164:21: note: declared here
+  164 |   BFGSSpace::Status testGradient(Scalar) { return testGradient(); }
+      |                     ^~~~~~~~~~~~
+---
+Finished <<< ndt_omp [1min 25s]
+Starting >>> autoware_auto_tf2
+Finished <<< grid_map_octomap [30.7s]
+Starting >>> ndt
+Finished <<< velodyne_driver [49.0s]
+Starting >>> object_range_splitter
+Finished <<< grid_map_ros [1min 8s]
+Starting >>> grid_map_pcl
+Finished <<< pointcloud_to_laserscan [1min 40s]
+Starting >>> traffic_light_classifier
+Finished <<< gyro_odometer [43.8s]
+Starting >>> traffic_light_ssd_fine_detector
+Finished <<< image_transport_decompressor [36.3s]
+Starting >>> velodyne_monitor
+Finished <<< autoware_auto_tf2 [36.8s]
+Starting >>> grid_map_filters
+Finished <<< object_range_splitter [36.1s]
+Starting >>> grid_map_loader
+Finished <<< tier4_api_msgs [1min 31s]
+Starting >>> grid_map_rviz_plugin
+[Processing: autoware_auto_vehicle_msgs, grid_map_filters, grid_map_loader, grid_map_pcl, grid_map_rviz_plugin, lanelet2_extension, ndt, tier4_external_api_msgs, tier4_perception_msgs, traffic_light_classifier, traffic_light_ssd_fine_detector, velodyne_monitor]
+Finished <<< grid_map_loader [35.9s]
+Starting >>> grid_map_visualization
+Finished <<< ndt [1min 14s]
+Starting >>> morai_msgs
+Finished <<< tier4_perception_msgs [1min 20s]
+Starting >>> detected_object_feature_remover
+Finished <<< velodyne_monitor [49.9s]
+Starting >>> tensorrt_yolo
+Finished <<< traffic_light_ssd_fine_detector [56.3s]
+Starting >>> tamagawa_imu_driver
+Finished <<< tier4_external_api_msgs [5min 28s]
+Starting >>> tier4_api_utils
+Finished <<< traffic_light_classifier [1min 13s]
+Starting >>> autoware_external_api_msgs
+Finished <<< detected_object_feature_remover [39.4s]
+Starting >>> velodyne_description
+Finished <<< velodyne_description [10.9s]
+Starting >>> autoware_testing
+Finished <<< tier4_api_utils [36.1s]
+Starting >>> grid_map_costmap_2d
+Finished <<< grid_map_rviz_plugin [1min 37s]
+Starting >>> grid_map_sdf
+Finished <<< autoware_testing [8.81s]
+Starting >>> neural_networks_provider
+Finished <<< autoware_external_api_msgs [42.9s]
+Starting >>> pose2twist
+Finished <<< tamagawa_imu_driver [58.6s]
+Starting >>> tier4_vehicle_launch
+--- stderr: neural_networks_provider
+CMake Warning at CMakeLists.txt:32 (message):
+  Skipped download (enable by setting DOWNLOAD_ARTIFACTS)
+
+
+---
+Finished <<< neural_networks_provider [7.80s]
+Starting >>> web_controller
+Finished <<< tier4_vehicle_launch [7.29s]
+Starting >>> fake_test_node
+Finished <<< web_controller [7.88s]
+Starting >>> gnss_poser
+Finished <<< autoware_auto_vehicle_msgs [3min 46s]
+Starting >>> tier4_autoware_utils
+Finished <<< grid_map_sdf [43.4s]
+Starting >>> autoware_auto_geometry
+Finished <<< pose2twist [38.9s]
+Starting >>> tier4_auto_msgs_converter
+Finished <<< tier4_auto_msgs_converter [9.88s]
+Starting >>> shift_decider
+Finished <<< gnss_poser [53.4s]
+Starting >>> vehicle_cmd_gate
+Finished <<< grid_map_costmap_2d [1min 19s]
+Starting >>> velodyne_pointcloud
+Finished <<< grid_map_visualization [2min 22s]
+Starting >>> external_cmd_selector
+--- stderr: grid_map_pcl
+** WARNING ** io features related to pcap will be disabled
+---
+Finished <<< grid_map_pcl [3min 28s]
+Starting >>> autoware_auto_msgs
+Finished <<< autoware_auto_msgs [6.03s]
+Starting >>> motion_testing
+Finished <<< fake_test_node [1min 19s]
+Starting >>> tier4_sensing_launch
+Finished <<< tier4_sensing_launch [5.57s]
+Starting >>> autoware_iv_external_api_adaptor
+Finished <<< shift_decider [44.6s]
+Starting >>> autoware_iv_internal_api_adaptor
+Finished <<< lanelet2_extension [5min 8s]
+Starting >>> costmap_generator
+Finished <<< autoware_auto_geometry [1min 24s]
+Starting >>> map_tf_generator
+Finished <<< motion_testing [46.3s]
+Starting >>> motion_common
+Finished <<< external_cmd_selector [1min 14s]
+Starting >>> traffic_light_visualization
+Finished <<< motion_common [35.2s]
+Starting >>> awapi_awiv_adapter
+Finished <<< tier4_autoware_utils [2min 45s]
+Starting >>> interpolation
+[Processing: autoware_iv_external_api_adaptor, autoware_iv_internal_api_adaptor, awapi_awiv_adapter, costmap_generator, grid_map_filters, interpolation, map_tf_generator, morai_msgs, tensorrt_yolo, traffic_light_visualization, vehicle_cmd_gate, velodyne_pointcloud]
+Finished <<< vehicle_cmd_gate [2min 47s]
+Starting >>> pointcloud_preprocessor
+--- stderr: map_tf_generator
+** WARNING ** io features related to pcap will be disabled
+---
+Finished <<< map_tf_generator [2min 13s]
+Starting >>> dummy_perception_publisher
+Finished <<< traffic_light_visualization [1min 55s]
+Starting >>> freespace_planning_algorithms
+Finished <<< autoware_iv_internal_api_adaptor [2min 50s]
+Starting >>> grid_map_utils
+Finished <<< interpolation [1min 33s]
+Starting >>> motion_utils
+Finished <<< grid_map_utils [47.1s]
+Starting >>> perception_utils
+Finished <<< costmap_generator [3min 27s]
+Starting >>> raw_vehicle_cmd_converter
+--- stderr: velodyne_pointcloud
+CMake Warning (dev) at CMakeLists.txt:24 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+---
+Finished <<< velodyne_pointcloud [4min 18s]
+Starting >>> lidar_centerpoint
+Finished <<< tensorrt_yolo [6min 38s]
+Starting >>> shape_estimation
+Finished <<< freespace_planning_algorithms [1min 18s]
+Starting >>> ad_service_state_monitor
+[Processing: ad_service_state_monitor, autoware_iv_external_api_adaptor, awapi_awiv_adapter, dummy_perception_publisher, grid_map_filters, lidar_centerpoint, morai_msgs, motion_utils, perception_utils, pointcloud_preprocessor, raw_vehicle_cmd_converter, shape_estimation]
+Finished <<< morai_msgs [7min 27s]
+Starting >>> ekf_localizer
+[Processing: ad_service_state_monitor, autoware_iv_external_api_adaptor, awapi_awiv_adapter, dummy_perception_publisher, ekf_localizer, grid_map_filters, lidar_centerpoint, motion_utils, perception_utils, pointcloud_preprocessor, raw_vehicle_cmd_converter, shape_estimation]
+Finished <<< perception_utils [1min 42s]
+Starting >>> emergency_handler
+Finished <<< dummy_perception_publisher [2min 40s]
+Starting >>> fault_injection
+Finished <<< raw_vehicle_cmd_converter [1min 43s]
+Starting >>> lidar_apollo_instance_segmentation
+Finished <<< autoware_iv_external_api_adaptor [5min 37s]
+Starting >>> map_loader
+Finished <<< awapi_awiv_adapter [4min 53s]
+Starting >>> ndt_scan_matcher
+Finished <<< emergency_handler [1min 5s]
+Starting >>> planning_error_monitor
+Finished <<< ad_service_state_monitor [2min 18s]
+Starting >>> system_error_monitor
+Finished <<< fault_injection [1min 15s]
+Starting >>> system_monitor
+Finished <<< lidar_centerpoint [2min 45s]
+Starting >>> traffic_light_map_based_detector
+Finished <<< ekf_localizer [2min 12s]
+Starting >>> image_projection_based_fusion
+[Processing: grid_map_filters, image_projection_based_fusion, lidar_apollo_instance_segmentation, map_loader, motion_utils, ndt_scan_matcher, planning_error_monitor, pointcloud_preprocessor, shape_estimation, system_error_monitor, system_monitor, traffic_light_map_based_detector]
+Finished <<< motion_utils [4min 29s]
+Starting >>> route_handler
+Finished <<< system_error_monitor [1min 17s]
+Starting >>> lane_departure_checker
+--- stderr: map_loader
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+---
+Finished <<< map_loader [2min 8s]
+Starting >>> trajectory_follower
+--- stderr: lidar_apollo_instance_segmentation
+** WARNING ** io features related to pcap will be disabled
+---
+Finished <<< lidar_apollo_instance_segmentation [2min 19s]
+Starting >>> motion_velocity_smoother
+Finished <<< shape_estimation [3min 55s]
+Starting >>> detected_object_validation
+Finished <<< traffic_light_map_based_detector [1min 19s]
+Starting >>> external_cmd_converter
+Finished <<< ndt_scan_matcher [2min 24s]
+Starting >>> map_based_prediction
+Finished <<< route_handler [57.1s]
+Starting >>> multi_object_tracker
+Finished <<< planning_error_monitor [2min 38s]
+Starting >>> object_merger
+Finished <<< external_cmd_converter [1min 15s]
+Starting >>> obstacle_avoidance_planner
+[Processing: detected_object_validation, grid_map_filters, image_projection_based_fusion, lane_departure_checker, map_based_prediction, motion_velocity_smoother, multi_object_tracker, object_merger, obstacle_avoidance_planner, pointcloud_preprocessor, system_monitor, trajectory_follower]
+Finished <<< lane_departure_checker [2min 6s]
+Starting >>> obstacle_cruise_planner
+[Processing: detected_object_validation, grid_map_filters, image_projection_based_fusion, map_based_prediction, motion_velocity_smoother, multi_object_tracker, object_merger, obstacle_avoidance_planner, obstacle_cruise_planner, pointcloud_preprocessor, system_monitor, trajectory_follower]
+Finished <<< map_based_prediction [2min 13s]
+Starting >>> obstacle_stop_planner
+Finished <<< object_merger [1min 48s]
+Starting >>> pose_initializer
+[Processing: detected_object_validation, grid_map_filters, image_projection_based_fusion, motion_velocity_smoother, multi_object_tracker, obstacle_avoidance_planner, obstacle_cruise_planner, obstacle_stop_planner, pointcloud_preprocessor, pose_initializer, system_monitor, trajectory_follower]
+Finished <<< motion_velocity_smoother [3min 34s]
+Starting >>> simple_planning_simulator
+Finished <<< image_projection_based_fusion [4min 45s]
+Starting >>> surround_obstacle_checker
+Finished <<< detected_object_validation [4min 17s]
+Starting >>> behavior_path_planner
+--- stderr: system_monitor
+In file included from /usr/include/boost/bind.hpp:30,
+                 from /usr/include/boost/property_tree/json_parser/detail/parser.hpp:7,
+                 from /usr/include/boost/property_tree/json_parser/detail/read.hpp:13,
+                 from /usr/include/boost/property_tree/json_parser.hpp:16,
+                 from /home/akm/tilde-AWF/normal-AWF/src/universe/autoware.universe/system/system_monitor/src/cpu_monitor/cpu_monitor_base.cpp:26:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+---
+Finished <<< system_monitor [5min 44s]
+Starting >>> behavior_velocity_planner
+[Processing: behavior_path_planner, behavior_velocity_planner, grid_map_filters, multi_object_tracker, obstacle_avoidance_planner, obstacle_cruise_planner, obstacle_stop_planner, pointcloud_preprocessor, pose_initializer, simple_planning_simulator, surround_obstacle_checker, trajectory_follower]
+Finished <<< trajectory_follower [5min 17s]
+Starting >>> pure_pursuit
+Finished <<< obstacle_avoidance_planner [3min 50s]
+Starting >>> freespace_planner
+Finished <<< multi_object_tracker [4min 29s]
+Starting >>> mission_planner
+Finished <<< pose_initializer [2min 39s]
+Starting >>> scenario_selector
+Finished <<< obstacle_cruise_planner [3min 47s]
+Starting >>> common_sensor_launch
+Finished <<< common_sensor_launch [6.01s]
+Starting >>> tier4_map_launch
+Finished <<< tier4_map_launch [6.37s]
+Starting >>> tier4_system_launch
+Finished <<< tier4_system_launch [7.52s]
+Starting >>> path_distance_calculator
+Finished <<< obstacle_stop_planner [3min 14s]
+Starting >>> autoware_adapi_v1_msgs
+Finished <<< surround_obstacle_checker [2min 14s]
+Starting >>> autoware_adapi_version_msgs
+Finished <<< simple_planning_simulator [2min 49s]
+Starting >>> tier4_simulator_launch
+Finished <<< tier4_simulator_launch [6.90s]
+Starting >>> autoware_common_msgs
+Finished <<< autoware_adapi_version_msgs [28.5s]
+Starting >>> autoware_control_msgs
+Finished <<< pure_pursuit [1min 31s]
+Starting >>> trajectory_follower_nodes
+Finished <<< freespace_planner [1min 34s]
+Starting >>> autoware_localization_msgs
+Finished <<< autoware_common_msgs [28.6s]
+Starting >>> camera_description
+Finished <<< camera_description [5.14s]
+Starting >>> imu_description
+Finished <<< path_distance_calculator [56.3s]
+Starting >>> livox_description
+Finished <<< imu_description [5.35s]
+Starting >>> pandar_description
+Finished <<< livox_description [5.21s]
+Starting >>> sample_vehicle_description
+Finished <<< pandar_description [5.72s]
+Starting >>> sample_vehicle_launch
+Finished <<< sample_vehicle_description [5.84s]
+Starting >>> vls_description
+Finished <<< sample_vehicle_launch [5.58s]
+Starting >>> individual_params
+Finished <<< scenario_selector [1min 38s]
+Starting >>> sample_sensor_kit_description
+Finished <<< vls_description [5.73s]
+Starting >>> tier4_hmi_msgs
+Finished <<< autoware_localization_msgs [30.6s]
+Starting >>> trtexec_vendor
+Finished <<< individual_params [5.80s]
+Starting >>> autoware_auto_perception_rviz_plugin
+Finished <<< sample_sensor_kit_description [5.70s]
+Starting >>> bag_time_manager_rviz_plugin
+Finished <<< autoware_control_msgs [50.5s]
+Starting >>> bluetooth_monitor
+[Processing: autoware_adapi_v1_msgs, autoware_auto_perception_rviz_plugin, bag_time_manager_rviz_plugin, behavior_path_planner, behavior_velocity_planner, bluetooth_monitor, grid_map_filters, mission_planner, pointcloud_preprocessor, tier4_hmi_msgs, trajectory_follower_nodes, trtexec_vendor]
+Finished <<< mission_planner [2min 40s]
+Starting >>> dummy_infrastructure
+Finished <<< tier4_hmi_msgs [41.2s]
+Starting >>> imu_corrector
+Finished <<< autoware_adapi_v1_msgs [2min 6s]
+Starting >>> initial_pose_button_panel
+--- stderr: bag_time_manager_rviz_plugin
+CMake Warning (dev) at CMakeLists.txt:7 (find_package):
+  Ignoring EXACT since no version is requested.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+---
+Finished <<< bag_time_manager_rviz_plugin [52.4s]
+Starting >>> livox_tag_filter
+--- stderr: trtexec_vendor
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/trtexec/trtexec.cpp:39:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::hostToDevice(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:452:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  452 |     void hostToDevice(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::deviceToHost(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:457:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  457 |     void deviceToHost(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/trtexec/trtexec.cpp:41:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:155:38: warning: unused parameter ‘b’ [-Wunused-parameter]
+  155 |         auto all = [](Binding const& b) { return true; };
+      |                       ~~~~~~~~~~~~~~~^
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:176:38: warning: unused parameter ‘b’ [-Wunused-parameter]
+  176 |         auto all = [](Binding const& b) { return true; };
+      |                       ~~~~~~~~~~~~~~~^
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp:314:32: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+  314 | template void setSparseWeights<IFullyConnectedLayer>(
+      |                                ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.h:32,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp:18:
+/usr/include/x86_64-linux-gnu/NvInfer.h:1443:22: note: declared here
+ 1443 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp:315:87: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+  315 |     IFullyConnectedLayer& l, int32_t k, int32_t rs, std::vector<int8_t>& sparseWeights);
+      |                                                                                       ^
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.h:32,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp:18:
+/usr/include/x86_64-linux-gnu/NvInfer.h:1443:22: note: declared here
+ 1443 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp: In function ‘void sample::sparsify(nvinfer1::INetworkDefinition&, std::vector<std::vector<signed char> >&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp:338:67: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+  338 |             auto& fc = *static_cast<nvinfer1::IFullyConnectedLayer*>(layer);
+      |                                                                   ^
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.h:32,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleUtils.cpp:18:
+/usr/include/x86_64-linux-gnu/NvInfer.h:1443:22: note: declared here
+ 1443 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleReporting.h:27,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:22,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleReporting.cpp:26:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::hostToDevice(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:452:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  452 |     void hostToDevice(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::deviceToHost(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:457:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  457 |     void deviceToHost(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleReporting.cpp:26:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:155:38: warning: unused parameter ‘b’ [-Wunused-parameter]
+  155 |         auto all = [](Binding const& b) { return true; };
+      |                       ~~~~~~~~~~~~~~~^
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:176:38: warning: unused parameter ‘b’ [-Wunused-parameter]
+  176 |         auto all = [](Binding const& b) { return true; };
+      |                       ~~~~~~~~~~~~~~~^
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleOptions.cpp: In function ‘T sample::{anonymous}::stringToValue(const string&) [with T = bool; std::string = std::__cxx11::basic_string<char>]’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleOptions.cpp:81:45: warning: unused parameter ‘option’ [-Wunused-parameter]
+   81 | bool stringToValue<bool>(const std::string& option)
+      |                          ~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:40:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::hostToDevice(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:452:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  452 |     void hostToDevice(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::deviceToHost(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:457:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  457 |     void deviceToHost(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:42:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:155:38: warning: unused parameter ‘b’ [-Wunused-parameter]
+  155 |         auto all = [](Binding const& b) { return true; };
+      |                       ~~~~~~~~~~~~~~~^
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.h:176:38: warning: unused parameter ‘b’ [-Wunused-parameter]
+  176 |         auto all = [](Binding const& b) { return true; };
+      |                       ~~~~~~~~~~~~~~~^
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp: In member function ‘bool sample::{anonymous}::EnqueueImplicit::operator()(sample::TrtCudaStream&) const’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:394:69: warning: ‘bool nvinfer1::IExecutionContext::enqueue(int32_t, void* const*, cudaStream_t, CUevent_st**)’ is deprecated [-Wdeprecated-declarations]
+  394 |         if (mContext.enqueue(mBatch, mBuffers, stream.get(), nullptr))
+      |                                                                     ^
+In file included from /usr/include/x86_64-linux-gnu/NvInfer.h:17,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:36:
+/usr/include/x86_64-linux-gnu/NvInferRuntime.h:1948:25: note: declared here
+ 1948 |     TRT_DEPRECATED bool enqueue(
+      |                         ^~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp: In lambda function:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:977:119: warning: ‘nvinfer1::ICudaEngine* nvinfer1::IRuntime::deserializeCudaEngine(const void*, std::size_t, nvinfer1::IPluginFactory*)’ is deprecated [-Wdeprecated-declarations]
+  977 |             engine.reset(rt->deserializeCudaEngine(iEnv.engine.getBlob().data(), iEnv.engine.getBlob().size(), nullptr));
+      |                                                                                                                       ^
+In file included from /usr/include/x86_64-linux-gnu/NvInfer.h:17,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:36:
+/usr/include/x86_64-linux-gnu/NvInferRuntime.h:637:43: note: declared here
+  637 |     TRT_DEPRECATED nvinfer1::ICudaEngine* deserializeCudaEngine(
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp: In instantiation of ‘void sample::{anonymous}::Iteration<ContextType>::createEnqueueFunction(const sample::InferenceOptions&, nvinfer1::IExecutionContext&, sample::Bindings&) [with ContextType = nvinfer1::IExecutionContext]’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:569:30:   required from ‘sample::{anonymous}::Iteration<ContextType>::Iteration(int32_t, const sample::InferenceOptions&, ContextType&, sample::Bindings&) [with ContextType = nvinfer1::IExecutionContext; int32_t = int]’
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:840:27:   required from ‘void sample::{anonymous}::inferenceExecution(const sample::InferenceOptions&, sample::InferenceEnvironment&, sample::{anonymous}::SyncStruct&, int32_t, int32_t, int32_t, std::vector<sample::InferenceTrace>&) [with ContextType = nvinfer1::IExecutionContext; int32_t = int]’
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:886:77:   required from here
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:724:24: warning: unused variable ‘ret’ [-Wunused-variable]
+  724 |             auto const ret = mEnqueue(stream);
+      |                        ^~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleInference.cpp:709:92: warning: unused parameter ‘bindings’ [-Wunused-parameter]
+  709 |         InferenceOptions const& inference, nvinfer1::IExecutionContext& context, Bindings& bindings)
+      |                                                                                  ~~~~~~~~~~^~~~~~~~
+In file included from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:38:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::hostToDevice(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:452:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  452 |     void hostToDevice(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h: In member function ‘virtual void sample::UnifiedMirroredBuffer::deviceToHost(sample::TrtCudaStream&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleDevice.h:457:38: warning: unused parameter ‘stream’ [-Wunused-parameter]
+  457 |     void deviceToHost(TrtCudaStream& stream)
+      |                       ~~~~~~~~~~~~~~~^~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp: In function ‘std::map<std::__cxx11::basic_string<char>, float> sample::{anonymous}::readScalesFromCalibrationCache(const string&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:89:41: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   89 |             tensorScales[tensorName] = *reinterpret_cast<float*>(&scalesAsInt);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp: In function ‘bool sample::setupNetworkAndConfig(const sample::BuildOptions&, const sample::SystemOptions&, nvinfer1::IBuilder&, nvinfer1::INetworkDefinition&, nvinfer1::IBuilderConfig&, std::unique_ptr<nvinfer1::IInt8Calibrator>&, std::ostream&, std::vector<std::vector<signed char> >&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:593:47: warning: ‘void nvinfer1::IBuilder::setMaxBatchSize(int32_t)’ is deprecated [-Wdeprecated-declarations]
+  593 |         builder.setMaxBatchSize(build.maxBatch);
+      |                                               ^
+In file included from /usr/include/x86_64-linux-gnu/NvCaffeParser.h:16,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:29:
+/usr/include/x86_64-linux-gnu/NvInfer.h:8795:25: note: declared here
+ 8795 |     TRT_DEPRECATED void setMaxBatchSize(int32_t batchSize) noexcept
+      |                         ^~~~~~~~~~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:796:50: warning: ‘virtual void nvinfer1::IBuilderConfig::setMinTimingIterations(int32_t)’ is deprecated [-Wdeprecated-declarations]
+  796 |     config.setMinTimingIterations(build.minTiming);
+      |                                                  ^
+In file included from /usr/include/x86_64-linux-gnu/NvCaffeParser.h:16,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:29:
+/usr/include/x86_64-linux-gnu/NvInfer.h:8095:33: note: declared here
+ 8095 |     TRT_DEPRECATED virtual void setMinTimingIterations(int32_t minTiming) noexcept
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp: In function ‘std::vector<std::pair<nvinfer1::WeightsRole, nvinfer1::Weights> > sample::getAllRefitWeightsForLayer(const nvinfer1::ILayer&)’:
+/home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:1213:77: warning: ‘IFullyConnectedLayer’ is deprecated [-Wdeprecated-declarations]
+ 1213 |         auto const& layer = static_cast<const nvinfer1::IFullyConnectedLayer&>(l);
+      |                                                                             ^
+In file included from /usr/include/x86_64-linux-gnu/NvCaffeParser.h:16,
+                 from /home/akm/tilde-AWF/normal-AWF/build/trtexec_vendor/_deps/tensorrt-src/samples/common/sampleEngines.cpp:29:
+/usr/include/x86_64-linux-gnu/NvInfer.h:1443:22: note: declared here
+ 1443 | class TRT_DEPRECATED IFullyConnectedLayer : public ILayer
+      |                      ^~~~~~~~~~~~~~~~~~~~
+---
+Finished <<< trtexec_vendor [1min 8s]
+Starting >>> localization_error_monitor
+Finished <<< imu_corrector [42.6s]
+Starting >>> polar_grid
+Finished <<< dummy_infrastructure [45.4s]
+Starting >>> rtc_auto_mode_manager
+Finished <<< bluetooth_monitor [1min 26s]
+Starting >>> stop_filter
+--- stderr: livox_tag_filter
+** WARNING ** io features related to pcap will be disabled
+---
+Finished <<< livox_tag_filter [53.6s]
+Starting >>> tier4_calibration_rviz_plugin
+--- stderr: pointcloud_preprocessor
+CMake Warning at /usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig.cmake:92 (message):
+  CGAL_DATA_DIR cannot be deduced, set the variable CGAL_DATA_DIR to set the
+  default value of CGAL::data_file_path()
+Call Stack (most recent call first):
+  CMakeLists.txt:12 (find_package)
+
+
+---
+Finished <<< pointcloud_preprocessor [14min 44s]
+Starting >>> compare_map_segmentation
+Finished <<< rtc_auto_mode_manager [32.3s]
+Starting >>> ground_segmentation
+Finished <<< initial_pose_button_panel [1min 5s]
+Starting >>> occupancy_grid_map_outlier_filter
+Finished <<< polar_grid [42.5s]
+Starting >>> tier4_localization_launch
+Finished <<< stop_filter [35.3s]
+Starting >>> tier4_datetime_rviz_plugin
+Finished <<< localization_error_monitor [1min 1s]
+Starting >>> tier4_localization_rviz_plugin
+Finished <<< tier4_localization_launch [7.10s]
+Starting >>> tier4_screen_capture_rviz_plugin
+Finished <<< grid_map_filters [20min 50s]
+Starting >>> grid_map_demos
+Finished <<< tier4_calibration_rviz_plugin [51.2s]
+Starting >>> tier4_simulated_clock_rviz_plugin
+Finished <<< tier4_datetime_rviz_plugin [36.8s]
+Starting >>> topic_state_monitor
+Finished <<< tier4_screen_capture_rviz_plugin [49.4s]
+Starting >>> joy_controller
+Finished <<< trajectory_follower_nodes [3min 54s]
+Starting >>> tier4_control_launch
+Finished <<< tier4_localization_rviz_plugin [1min 10s]
+Starting >>> pacmod_interface
+Finished <<< tier4_simulated_clock_rviz_plugin [40.2s]
+Starting >>> tier4_state_rviz_plugin
+Finished <<< topic_state_monitor [38.1s]
+Starting >>> tvm_utility
+Finished <<< tier4_control_launch [7.38s]
+Starting >>> twist2accel
+--- stderr: tvm_utility
+CMake Warning at CMakeLists.txt:110 (message):
+  No model is generated for
+  /home/akm/tilde-AWF/normal-AWF/src/universe/autoware.universe/common/tvm_utility/test/yolo_v2_tiny,
+  skipping test
+
+
+---
+Finished <<< tvm_utility [8.58s]
+Starting >>> vehicle_constants_manager
+Finished <<< autoware_auto_perception_rviz_plugin [3min 32s]
+Starting >>> vehicle_velocity_converter
+Finished <<< vehicle_constants_manager [18.0s]
+Starting >>> ad_api_adaptors
+Finished <<< joy_controller [1min 1s]
+Starting >>> automatic_pose_initializer
+Finished <<< twist2accel [43.0s]
+Starting >>> crosswalk_traffic_light_estimator
+Finished <<< vehicle_velocity_converter [37.1s]
+Starting >>> default_ad_api
+Finished <<< automatic_pose_initializer [29.9s]
+Starting >>> dummy_diag_publisher
+Finished <<< ad_api_adaptors [54.3s]
+Starting >>> front_vehicle_velocity_estimator
+Finished <<< tier4_state_rviz_plugin [1min 27s]
+Starting >>> goal_distance_calculator
+Finished <<< dummy_diag_publisher [33.3s]
+Starting >>> heatmap_visualizer
+Finished <<< ground_segmentation [3min 16s]
+Starting >>> image_diagnostics
+Finished <<< occupancy_grid_map_outlier_filter [3min 30s]
+Starting >>> kinematic_evaluator
+Finished <<< default_ad_api [1min 15s]
+Starting >>> lanelet2_map_preprocessor
+Finished <<< crosswalk_traffic_light_estimator [1min 23s]
+Starting >>> localization_evaluator
+Finished <<< goal_distance_calculator [57.0s]
+Starting >>> obstacle_collision_checker
+Finished <<< image_diagnostics [44.8s]
+Starting >>> probabilistic_occupancy_grid_map
+Finished <<< heatmap_visualizer [56.8s]
+Starting >>> radar_fusion_to_detected_object
+Finished <<< front_vehicle_velocity_estimator [1min 45s]
+Starting >>> radar_tracks_msgs_converter
+Finished <<< compare_map_segmentation [4min 43s]
+Starting >>> euclidean_cluster
+[Processing: behavior_path_planner, behavior_velocity_planner, euclidean_cluster, grid_map_demos, kinematic_evaluator, lanelet2_map_preprocessor, localization_evaluator, obstacle_collision_checker, pacmod_interface, probabilistic_occupancy_grid_map, radar_fusion_to_detected_object, radar_tracks_msgs_converter]
+Finished <<< kinematic_evaluator [1min 44s]
+Starting >>> simulator_compatibility_test
+--- stderr: simulator_compatibility_test
+/home/akm/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/home/akm/.local/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/home/akm/.local/lib/python3.10/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/home/akm/.local/lib/python3.10/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+---
+Finished <<< simulator_compatibility_test [4.55s]
+Starting >>> steer_offset_estimator
+Finished <<< radar_fusion_to_detected_object [1min 22s]
+Starting >>> tier4_control_rviz_plugin
+Finished <<< radar_tracks_msgs_converter [56.9s]
+Starting >>> tier4_traffic_light_rviz_plugin
+Finished <<< localization_evaluator [1min 59s]
+Starting >>> tier4_vehicle_rviz_plugin
+[Processing: behavior_path_planner, behavior_velocity_planner, euclidean_cluster, grid_map_demos, lanelet2_map_preprocessor, obstacle_collision_checker, pacmod_interface, probabilistic_occupancy_grid_map, steer_offset_estimator, tier4_control_rviz_plugin, tier4_traffic_light_rviz_plugin, tier4_vehicle_rviz_plugin]
+Finished <<< steer_offset_estimator [47.3s]
+Starting >>> elevation_map_loader
+Finished <<< lanelet2_map_preprocessor [2min 36s]
+Starting >>> sample_sensor_kit_launch
+Finished <<< sample_sensor_kit_launch [7.06s]
+Starting >>> tier4_perception_rviz_plugin
+Finished <<< obstacle_collision_checker [2min 26s]
+Starting >>> accel_brake_map_calibrator
+Finished <<< tier4_traffic_light_rviz_plugin [1min 6s]
+Starting >>> control_performance_analysis
+Finished <<< tier4_control_rviz_plugin [1min 16s]
+Starting >>> operation_mode_transition_manager
+Finished <<< probabilistic_occupancy_grid_map [2min 58s]
+Starting >>> planning_debug_tools
+[Processing: accel_brake_map_calibrator, behavior_path_planner, behavior_velocity_planner, control_performance_analysis, elevation_map_loader, euclidean_cluster, grid_map_demos, operation_mode_transition_manager, pacmod_interface, planning_debug_tools, tier4_perception_rviz_plugin, tier4_vehicle_rviz_plugin]
+Finished <<< euclidean_cluster [2min 51s]
+Starting >>> detection_by_tracker
+Finished <<< pacmod_interface [6min 7s]
+Starting >>> planning_evaluator
+Finished <<< tier4_perception_rviz_plugin [1min 31s]
+Starting >>> tier4_debug_tools
+--- stderr: elevation_map_loader
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+---
+Finished <<< elevation_map_loader [1min 51s]
+Starting >>> tier4_planning_rviz_plugin
+Finished <<< accel_brake_map_calibrator [1min 42s]
+Starting >>> tier4_autoware_api_launch
+Finished <<< tier4_autoware_api_launch [7.22s]
+[Processing: behavior_path_planner, behavior_velocity_planner, control_performance_analysis, detection_by_tracker, grid_map_demos, operation_mode_transition_manager, planning_debug_tools, planning_evaluator, tier4_debug_tools, tier4_planning_rviz_plugin, tier4_vehicle_rviz_plugin]
+Finished <<< tier4_vehicle_rviz_plugin [3min 21s]
+Finished <<< tier4_debug_tools [1min 9s]
+Finished <<< control_performance_analysis [2min 36s]
+Finished <<< planning_debug_tools [2min 18s]
+Finished <<< operation_mode_transition_manager [2min 51s]
+Finished <<< detection_by_tracker [2min 34s]
+Starting >>> tier4_perception_launch
+Finished <<< tier4_perception_launch [9.86s]
+Finished <<< behavior_path_planner [15min 17s]
+[Processing: behavior_velocity_planner, grid_map_demos, planning_evaluator, tier4_planning_rviz_plugin]
+Finished <<< planning_evaluator [3min 37s]
+[Processing: behavior_velocity_planner, grid_map_demos, tier4_planning_rviz_plugin]
+Finished <<< tier4_planning_rviz_plugin [4min 5s]
+[Processing: behavior_velocity_planner, grid_map_demos]
+[Processing: behavior_velocity_planner, grid_map_demos]
+Finished <<< behavior_velocity_planner [18min 14s]
+Starting >>> tier4_planning_launch
+Finished <<< grid_map_demos [13min 4s]
+Starting >>> grid_map
+Finished <<< grid_map [3.94s]
+Finished <<< tier4_planning_launch [7.24s]
+Starting >>> autoware_launch
+Finished <<< autoware_launch [6.36s]
+
+Summary: 231 packages finished [38min 33s]
+  15 packages had stderr output: bag_time_manager_rviz_plugin elevation_map_loader grid_map_pcl lidar_apollo_instance_segmentation livox_tag_filter map_loader map_tf_generator ndt_omp neural_networks_provider pointcloud_preprocessor simulator_compatibility_test system_monitor trtexec_vendor tvm_utility velodyne_pointcloud
