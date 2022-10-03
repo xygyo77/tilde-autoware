@@ -52,7 +52,7 @@ repositories:
   universe/autoware.universe:
     type: git
     url: https://github.com/xygyo77/autoware.universe.git
-    version: stee-rebase1
+    version: steerebase1
   universe/external/grid_map:
     type: git
     url: https://github.com/ANYbotics/grid_map.git
