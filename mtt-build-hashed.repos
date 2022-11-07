@@ -51,21 +51,22 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
     version: 3de568d173547c3605ef444944c540ad49db7471
-  # CARET
-  autoware_common:
-    type: git
-    url: https://github.com/tier4/caret_common.git
-    version: main
-  # tilde(mtt)
-  universe/external/tilde:
-    type: git
-    url: https://github.com/tier4/TILDE.git
-    version: master
+#  # CARET
+#  autoware_common:
+#    type: git
+#    url: https://github.com/tier4/caret_common.git
+#    version: main
+#  # tilde(mtt)
+#  ###universe/external/tilde:
+#  universe/autoware.universe/tilde:
+#    type: git
+#    url: https://github.com/tier4/TILDE.git
+#    version: master
   # autoware.universe for tilde(mtt)
   universe/autoware.universe:
     type: git
     url: https://github.com/xygyo77/tilde-autoware.universe.git
-    version: 378635e2ffd583d29753a5b9550f9f722c3ffdd7
+    version: mtt-base
   universe/external/morai_msgs:
     type: git
     url: https://github.com/MORAI-Autonomous/MORAI-ROS2_morai_msgs.git
